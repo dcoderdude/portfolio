@@ -1,0 +1,9 @@
+.container {
+    display: flexbox;
+    font-size: medium;
+    font-family: sans-serif;
+    background-color: black;
+    color: gray;
+    padding: auto;
+    text-align: center;
+}
