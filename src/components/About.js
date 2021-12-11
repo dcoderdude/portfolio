@@ -11,7 +11,7 @@ export default function About()
                     </h1>
                     <div className={styles.contact_info}>
                         <a href="#contact">
-                            Quick Response
+                            DM contact me directly!
                         </a>
                     </div>
                 </div>
