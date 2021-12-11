@@ -1,9 +1,22 @@
-.container {
-    display: flexbox;
-    font-size: medium;
-    font-family: sans-serif;
-    background-color: black;
-    color: gray;
-    padding: auto;
-    text-align: center;
+.outer_container {
+    display: flex;
+    flex: auto;
+}
+
+.inner_container {
+    display: flex;
+    flex-grow: initial;
+}
+
+.header {
+    color: white;
+}
+
+.contact_info {
+    color: white;
+    background-color: green;
+}
+
+.contact_image {
+    inline-size: initial;
 }
