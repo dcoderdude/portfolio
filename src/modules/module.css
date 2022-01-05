@@ -10,3 +10,11 @@
 .portfolio_picture {
     display: flexbox;
 }
+
+.projects_links {
+    display: flexbox;
+}
+
+.paragraph {
+    display: flexbox;
+}

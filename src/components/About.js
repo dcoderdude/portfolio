@@ -1,13 +1,13 @@
-import styles from '../../src/modules/about.module.css'
+import styles from '../../src/modules/module.css'
 import Logo from '../../src/assets/pengu.svg'
 
-export default function About() 
+export default function About()
 {
     return (
         <section id ="about">
             <div  className={styles.heading_container}>
                 <h1>Hi, I'm Dan
-                    <br/> Full Stack Web Developer
+                    <br/> Full Stack, Web Developer
                 </h1>
             </div>
             <div className={styles.links_container}>
@@ -15,6 +15,7 @@ export default function About()
                     href="#contact">
                     DM contact me directly!
                 </a>
+                <br/> 
                 <a
                     href="#projects">
                     See my other projects!
