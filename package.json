@@ -1,6 +1,7 @@
 {
   "name": "my-developer-website",
   "version": "0.1.0",
+  "homepage": "https://dcoderdude.github.io/portfolio-website/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
@@ -16,7 +17,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "homepage": "https://dcoderdude.github.io/portfolio-website/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
