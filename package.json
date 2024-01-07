@@ -16,6 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "homepage": "https://dcoderdude.github.io/portfolio-website/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
