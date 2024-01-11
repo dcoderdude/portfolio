@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Atom Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thank you for using this template! We hope you can use it to make your next web project a success!
 
-## Available Scripts
+Atom is a free portfolio template styled with TailwindCSS. Other open source libraries were also used to provide the functionality required to make your customization quicker and faster.
 
-In the project directory, you can run:
+- [Alpine.js](https://github.com/alpinejs/alpine): A Vue-inspired jQuery alternative that offers you the reactive and declarative nature of big frameworks at a much lower cost.
+- [Alpine Magic Helpers](https://github.com/alpine-collective/alpine-magic-helpers): A collection of magic properties and helper functions for use with Alpine.js
+- [Boxicons](https://boxicons.com/): A simple vector icons set carefully crafted for designers and developers to use in your next project.
+- [Highlight.js](https://highlightjs.org/): A popular code syntax highlight library, we're also using the "Atom Dark" theme for it.
 
-### `npm start`
+We’re also using some Tailwind plugins to extend our config and available classes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [TailwindCSS Forms](https://github.com/tailwindlabs/tailwindcss-forms): This is the official plugin for globally styling form fields, we have added some custom styles too.
+- [TailwindCSS Typography](https://tailwindcss.com/docs/typography-plugin): Official TailwindCSS plugin for styling user-generated content.
+- [TailwindCSS Aspect Ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio): Another official plugin for aspect ratio utilities, we use this heavily for responsive images.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development Workflow
 
-### `npm test`
+NPM is used for compilation of scripts as well as live reloading when changes are made.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will need to run `npm install` or `yarn` before starting to work on with the templates.
 
-### `npm run build`
+> Important note: You need Node version 12.13 or higher as per [TailwindCSS' requirements](https://tailwindcss.com/docs/upgrading-to-v2#upgrade-to-node-js-12-13-or-higher)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Two NPM tasks have been configured to help with your development: -`npm run develop` - This runs the development tasks, compiles and listens to changes in the `assets/styles` folder and lastly, activates a [BrowserSync](https://www.browsersync.io/docs/command-line) server for live reloading.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `npm run build` - This will be used to build your JavaScript/CSS and make them ready for production. It also activates `PurgeCSS` which is used to remove unused CSS classes from your project, providing a smaller bundle size to ensure that your website loads faster.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As always, we recommend you read the [official TailwindCSS docs](https://tailwindcss.com/), they’re the best way to learn Tailwind at the moment.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project uses a mostly flat structure with a key folders and files:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `assets` folder: This is where all of the projects styles, javascript, fonts (if any) and images live, each on their own folder for better organization. - One thing to keep in mind if that if you want to use the project as is and decide to rename the `styles` folder, be sure to update the `css` NPM script with the new name.
+- `browser-sync-config.js`: Pretty self-explanatory, this is the config that BrowserSync uses when we launch our live reload server. Here are the [options docs](https://www.browsersync.io/docs/options) in case you want to customize it.
+- `package.json`: Where our dependencies, [browserlist](https://github.com/browserslist/browserslist) config and NPM scripts live. - _Note_: Since we mainly use `yarn` for our local development, you’ll also see a `yarn.lock` file on the project.
+- `postcss.config.js`: This is where the styling magic happens, here you can add any postCSS plugin that you fancy, we’re currently only using these at the moment: - TailwindCSS: obviously - [postcss-nested](https://github.com/postcss/postcss-nested): To mimic SCSS nesting - [autoprefixer](https://github.com/postcss/autoprefixer): To support old browsers - [postcss-clean](https://github.com/leodido/postcss-clean): To minify our CSS on production
+- `tailwind.config.js`: The project’s tailwind config, here you will find our custom classes and tailwind plugin’s config.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Everything else are the HTML templates.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## The Tailwind Config
 
-## Learn More
+Each of our projects make use of `extend` as much as possible for our tailwind config, but we do override some fo the defaults, like the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `fontFamily`: We tend to add our our fonts here and only use those
+- `screens`: We actually add a smaller `xs` screen for `375px` widths, we think it helps us test for mobile better and we still use the default classes.
+- `colors`: We typically only use our project’s colors and discard the default’s
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### How to keep the defaults and our new classes
 
-### Code Splitting
+If you want to keep the default and still use our classes, you just need to move the property you want to change to the inside of `extend`, here’s an example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Let’s say you want to keep the `fontFamily` classes Tailwind has, here’s how you could change the config to make it happen:
 
-### Analyzing the Bundle Size
+**Original**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```js
+// tailwind.config.js
+module.exports = {
+	...
+	theme: {
+	        fontFamily: {
+	            header: [ "Merriweather", "serif"],
+	            body: ["Poppins", "sans-serif"]
+	        },
+	}
+	...
+}
+```
 
-### Making a Progressive Web App
+**Keep the Tailwind defaults**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```js
+// tailwind.config.js
+module.exports = {
+	...
+	theme: {
 
-### Advanced Configuration
+	},
+	extend: {
+			fontFamily: {
+	            header: [ "Merriweather", "serif"],
+	            body: ["Poppins", "sans-serif"]
+	        },
+	}
+	...
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+That’s it, next time you compile, you’ll have the `font-sans`, `font-serif` and `font-mono` classes available.
