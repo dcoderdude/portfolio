@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,eAAgB,CAChB,wBACF","file":"main.e0d5d72f.chunk.css","sourcesContent":[".App {\n  display: flexbox;\n  background-color: whitesmoke;\n}\n"]}
