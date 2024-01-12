@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "homepage": "https://dcoderdude.github.io/portfolio-website/",
   "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^1.1.2"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -16,16 +27,6 @@
     "last 2 versions",
     "> 1%"
   ],
-  "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/forms": "^0.4.0",
-    "@tailwindcss/typography": "^0.5.2",
-    "browser-sync": "^2.27.7",
-    "concurrently": "^7.0.0",
-    "cssnano": "^5.0.17",
-    "nodejs": "^0.0.0",
-    "postcss-cli": "^9.1.0"
-  },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "gh-pages": "^6.1.1",
