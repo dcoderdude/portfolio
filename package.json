@@ -1,38 +1,38 @@
 {
-  "name": "my-developer-website",
-  "version": "1.0.0",
-  "homepage": "https://dcoderdude.github.io/portfolio-website/",
+  "name": "portfolio-website",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.33",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^1.1.2"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
-    "server-reload": "browser-sync start --config './browser-sync-config.js'",
-    "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
-    "build": "npm run css -- --env 'production'",
-    "format": "npx prettier ./**/*.html"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "browserslist": [
-    "last 2 versions",
-    "> 1%"
-  ],
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "gh-pages": "^6.1.1",
-    "postcss": "^8.4.7",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.8",
-    "tailwindcss": "^3.0.23"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
