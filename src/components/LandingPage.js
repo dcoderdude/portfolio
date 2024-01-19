@@ -44,7 +44,7 @@ const LandingPage = () => {
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Hello I'm Daniel Hernandez!</h2><br/>
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            <h3>Let's Connect! &rarr;</h3>
+            <h3>Let's Connect!</h3><p>&rarr;</p>
             <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} style={{ marginRight: '8px' }} />
             </a>
