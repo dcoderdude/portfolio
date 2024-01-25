@@ -8,7 +8,7 @@ const githubProfileUrl = 'https://github.com/dcoderdude'
 const AppFooter = () => {
     return (
         <section id="appfooter">
-            <div class="bg-gradient-to-r from-cyan-500 to-blue-500 md:flex lg:gap-x-10">
+            <div class="md:flex lg:gap-x-10">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                         <h3 class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Follow Me</h3>

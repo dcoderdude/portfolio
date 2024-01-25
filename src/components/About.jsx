@@ -1,7 +1,7 @@
 const About = () => {
     return (
         <section id="about">
-            <div class="bg-gradient-to-r from-cyan-500 to-blue-500 md:flex lg:gap-x-10">
+            <div class="md:flex lg:gap-x-10">
                 <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
                         <h2
