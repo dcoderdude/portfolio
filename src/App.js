@@ -71,30 +71,6 @@ function App() {
                         <p className='text-gray-800 py-1'>React</p>
                         <p className='text-gray-800 py-1'>etc...</p>
                     </div>
-                    <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-                        <img src={webdev} width={100} height={100} alt="web" />
-                        <h3 className='text-lg font-medium pt-8 pb-2'>
-                            Web Development
-                        </h3>
-                        <p className='py-2'>
-                            Creating elegent web applications suited for your needs following core design theory.
-                        </p>
-                        <h4 className='py-4 text-teal-600'>Web development tools I use</h4>
-                        <p className='text-gray-800 py-1'>React</p>
-                        <p className='text-gray-800 py-1'>etc...</p>
-                    </div>
-                    <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-                        <img src={webdev} width={100} height={100} alt="web" />
-                        <h3 className='text-lg font-medium pt-8 pb-2'>
-                            Web Development
-                        </h3>
-                        <p className='py-2'>
-                            Creating elegent web applications suited for your needs following core design theory.
-                        </p>
-                        <h4 className='py-4 text-teal-600'>Web development tools I use</h4>
-                        <p className='text-gray-800 py-1'>React</p>
-                        <p className='text-gray-800 py-1'>etc...</p>
-                    </div>
                 </div>
             </section>
         </main>
