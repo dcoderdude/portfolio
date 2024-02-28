@@ -4,10 +4,8 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import devicon from '../src/images/decoderdude.png';
 import web from '../src/images/icon-web.svg';
 import desktop from '../src/images/icon-desktop.svg';
-import embedded from '../src/images/icon-embedded.svg';
 import ehr from '../src/images/ehr.png';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 function App() {
     const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
