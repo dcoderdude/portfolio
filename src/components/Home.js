@@ -5,7 +5,7 @@ import devicon from '../images/decoderdude.png';
 export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
     const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
     const githubProfileUrl = 'https://github.com/dcoderdude';
-    const pdfUrl = 'DanHernandez.pdf'
+    const cv = 'CV.pdf'
 
     const handleChange = () => {
         const newValue = darkModeState === 'dark' ? 'light' : 'dark';
@@ -22,8 +22,8 @@ export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
                     </li>
                     <li>
                         <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                            href={pdfUrl}
-                            download='Hernandez-Dan.pdf'>
+                            href={cv}
+                            download='CV.pdf'>
                             Resume
                         </a>
                     </li>
