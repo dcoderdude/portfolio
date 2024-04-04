@@ -1,7 +1,7 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import devicon from '../images/decoderdude.png';
-import NavBar from "./Header";
+import BannerHeader from "./BannerHeader";
 
 export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
     const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
@@ -15,7 +15,7 @@ export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
 
     return (
         <section className='min-h-screen'>
-            <NavBar />
+            <BannerHeader />
             <nav className='flex py-10 mb-12 justify-between'>
                 <h1 className='text-xl font-burtons dark:text-white'>dcoderdude</h1>
                 <ul className='flex items-center'>
