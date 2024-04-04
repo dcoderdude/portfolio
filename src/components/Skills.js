@@ -1,9 +1,11 @@
 import web from '../images/icon-web.svg';
 import desktop from '../images/icon-desktop.svg';
+import Header from './Header';
 
 export default function Skills() {
     return (
-        <section>
+        <section className='min-h-screen'>
+            <Header />
             <div>
                 <h3 className='text-3xl py-1 dark:text-white'>Services I offer</h3>
                 <p className='text-md py-2 leading-8 text-gray-80 dark:text-white'>

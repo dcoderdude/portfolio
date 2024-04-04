@@ -1,6 +1,7 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import devicon from '../images/decoderdude.png';
+import NavBar from "./Header";
 
 export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
     const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
@@ -14,6 +15,7 @@ export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
 
     return (
         <section className='min-h-screen'>
+            <NavBar />
             <nav className='flex py-10 mb-12 justify-between'>
                 <h1 className='text-xl font-burtons dark:text-white'>dcoderdude</h1>
                 <ul className='flex items-center'>
@@ -33,7 +35,7 @@ export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white'>Dan Hernandez</h2>
                 <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Full Stack Developer</h3>
                 <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>
-                    Freelancer providing services for programming content needs.
+                    Experienced Computer Scientist with 9+ years, offering tailored programming solutions to meet diverse content needs.
                 </p>
             </div>
             <p className='text-center text-2xl py-2 dark:text-white'>Follow Me</p>

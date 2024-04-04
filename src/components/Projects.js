@@ -1,8 +1,10 @@
 import ehr from '../images/ehr.png';
+import Header from './Header';
 
 export default function Projects() {
     return (
-        <section>
+        <section className='min-h-screen'>
+            <Header />
             <div>
                 <h3 className='text-3xl py-1 dark:text-white'>Checkout my portfolio</h3>
                 <p className='text-md py-2 leading-8 text-gray-80 dark:text-white'>
