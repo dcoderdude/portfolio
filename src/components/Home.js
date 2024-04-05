@@ -15,9 +15,8 @@ export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
 
     return (
         <section className='min-h-screen'>
-            <BannerHeader />
             <nav className='flex py-10 mb-12 justify-between'>
-                <h1 className='text-xl font-burtons dark:text-white'>dcoderdude</h1>
+                <BannerHeader />
                 <ul className='flex items-center'>
                     <li>
                         <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
