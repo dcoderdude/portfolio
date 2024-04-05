@@ -6,7 +6,6 @@ import BannerHeader from "./BannerHeader";
 export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
     const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
     const githubProfileUrl = 'https://github.com/dcoderdude';
-    const cv = 'CV.pdf'
 
     const handleChange = () => {
         const newValue = darkModeState === 'dark' ? 'light' : 'dark';
@@ -20,13 +19,6 @@ export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
                 <ul className='flex items-center'>
                     <li>
                         <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
-                    </li>
-                    <li>
-                        <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                            href={cv}
-                            download='CV.pdf'>
-                            Resume
-                        </a>
                     </li>
                 </ul>
             </nav>
