@@ -25,7 +25,7 @@ function App() {
         <div className={darkModeState}>
             <main className={twMainClass}>
                 <Router>
-                    <BannerHeader className='flex py-10 mb-12 justify-between' darkMode={darkModeState} updateDarkModeState={updateDarkModeState} />
+                    <BannerHeader darkMode={darkModeState} updateDarkModeState={updateDarkModeState} />
                     <Routes>
                         <Route path='/portfolio' element={<Home />} />
                         <Route path='/about' element={<About />} />

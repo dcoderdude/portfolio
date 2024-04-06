@@ -13,19 +13,19 @@ export default function BannerHeader({ darkMode: darkModeState, updateDarkModeSt
             <div className='flex py-10 mb-12 justify-between'>
                 <nav className='flex py-5 justify-center'>
                     <ul className='flex items-center'>
-                    <li className='px-2'>
-                        <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
-                    </li>
-                        <li className=' px-2'>
+                        <li className='px-1'>
+                            <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
+                        </li>
+                        <li className='px-1'>
                             <Link className='dark:text-white' to='/portfolio'>HOME</Link>
                         </li>
-                        <li className=' px-2'>
+                        <li className='px-1'>
                             <Link className='dark:text-white' to='/about'>ABOUT</Link>
                         </li>
-                        <li className=' px-2'>
+                        <li className='px-1'>
                             <Link className='dark:text-white' to='/skills'>SKILLS</Link>
                         </li>
-                        <li className=' px-2'>
+                        <li className='px-1'>
                             <Link className='dark:text-white' to='/projects'>PROJECTS</Link>
                         </li>
                         <li>
