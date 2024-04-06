@@ -1,9 +1,6 @@
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import devicon from '../images/decoderdude.png';
 
 export default function Home() {
-    const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
-    const githubProfileUrl = 'https://github.com/dcoderdude';
 
     return (
         <section className='min-h-screen'>
@@ -13,15 +10,6 @@ export default function Home() {
                 <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>
                     Experienced Computer Scientist with 9+ years, offering tailored programming solutions to meet diverse content needs.
                 </p>
-            </div>
-            <p className='text-center text-2xl py-2 dark:text-white'>Follow Me</p>
-            <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white'>
-                <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer">
-                    <AiFillLinkedin />
-                </a>
-                <a href={githubProfileUrl} target="_blank" rel="noopener noreferrer">
-                    <AiFillGithub />
-                </a>
             </div>
             <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:w-96 md:h-96'>
                 <img src={devicon} alt="decoderdude" />
