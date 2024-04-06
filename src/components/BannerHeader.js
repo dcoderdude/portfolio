@@ -10,33 +10,32 @@ export default function BannerHeader({ darkMode: darkModeState, updateDarkModeSt
 
     return (
         <section>
-        <nav className='flex py-10 justify-center'>
-            <ul className='flex py-5 items-center'>
-                <li>
-                    <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
-                </li>
-                <li>
-                    <Link className='px-3 dark:text-white' to='/portfolio'>HOME</Link>
-                </li>
-                <li>
-                    <Link className='px-3 dark:text-white' to='/about'>ABOUT</Link>
-                </li>
-                <li>
-                    <Link className='px-3 dark:text-white' to='/skills'>SKILLS</Link>
-                </li>
-                <li>
-                    <Link className='px-3 dark:text-white' to='/projects'>PROJECTS</Link>
-                </li>
-                <li>
-                    <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                        href={cv}
-                        download='CV.pdf'>
-                        Resume
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
+            <nav className='flex py-10 justify-center'>
+                <ul className='flex py-5 items-center'>
+                    <li className='px-2'>
+                        <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
+                    </li>
+                    <li className='px-2'>
+                        <Link className=' dark:text-white' to='/portfolio'>HOME</Link>
+                    </li>
+                    <li className='px-2'>
+                        <Link className=' dark:text-white' to='/about'>ABOUT</Link>
+                    </li>
+                    <li className='px-2'>
+                        <Link className=' dark:text-white' to='/skills'>SKILLS</Link>
+                    </li>
+                    <li className='px-2'>
+                        <Link className=' dark:text-white' to='/projects'>PROJECTS</Link>
+                    </li>
+                    <li className='px-2'>
+                        <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
+                            href={cv}
+                            download='CV.pdf'>
+                            Resume
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     );
 }
