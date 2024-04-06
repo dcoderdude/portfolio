@@ -1,27 +1,12 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import devicon from '../images/decoderdude.png';
-import BannerHeader from "./BannerHeader";
 
-export default function Home({ darkMode: darkModeState, updateDarkModeState }) {
+export default function Home() {
     const linkedinProfileUrl = 'https://www.linkedin.com/in/dan-e-hernandez/';
     const githubProfileUrl = 'https://github.com/dcoderdude';
 
-    const handleChange = () => {
-        const newValue = darkModeState === 'dark' ? 'light' : 'dark';
-        updateDarkModeState(newValue);
-    }
-
     return (
         <section className='min-h-screen'>
-            <nav className='flex py-10 mb-12 justify-between'>
-                <BannerHeader />
-                <ul className='flex items-center'>
-                    <li>
-                        <BsFillMoonStarsFill onClick={handleChange} className='cursor-pointer text-2xl dark:text-white' />
-                    </li>
-                </ul>
-            </nav>
             <div className='text-center p-10'>
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white'>Dan Hernandez</h2>
                 <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Full Stack Developer</h3>

@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import BannerHeader from './components/BannerHeader';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
         <div className={darkModeState}>
             <main className={twMainClass}>
                 <Router>
+                    <BannerHeader className='flex py-10 mb-12 justify-between' darkMode={darkModeState} updateDarkModeState={updateDarkModeState} />
                     <Routes>
-                        <Route path='/portfolio' element={<Home darkMode={darkModeState} updateDarkModeState={updateDarkModeState} />} />
+                        <Route path='/portfolio' element={<Home />} />
                         <Route path='/about' element={<About />} />
                         <Route path='/skills' element={<Skills />} />
                         <Route path='/projects' element={<Projects />} />
