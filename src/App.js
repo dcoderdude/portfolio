@@ -1,10 +1,11 @@
 import './App.css'
-import { useState } from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import BannerHeader from './components/BannerHeader';
+import BannerFooter from './components/BannerFooter';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -12,7 +13,6 @@ function App() {
     const updateDarkModeState = (newValue) => {
         setDarkMode(newValue);
     };
-
     const twMainClass = `
     bg-white 
     px-10 
@@ -32,6 +32,7 @@ function App() {
                         <Route path='/skills' element={<Skills />} />
                         <Route path='/projects' element={<Projects />} />
                     </Routes>
+                    <BannerFooter />
                 </Router>
             </main>
         </div>
