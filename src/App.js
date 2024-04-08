@@ -27,7 +27,8 @@ function App() {
                 <Router>
                     <BannerHeader darkMode={darkModeState} updateDarkModeState={updateDarkModeState} />
                     <Routes>
-                        <Route path='/portfolio' element={<Home />} />
+                        <Route path='/' element={<Home />} /> {/* localhost */}
+                        <Route path='/portfolio' element={<Home />} /> {/* github pages*/}
                         <Route path='/about' element={<About />} />
                         <Route path='/skills' element={<Skills />} />
                         <Route path='/projects' element={<Projects />} />
